@@ -1,0 +1,46 @@
+{
+  "name": "create-microservice",
+  "version": "1.0.0",
+  "description": "CLI tool that scaffolds a production-ready Node.js microservice with AWS, Docker, and CI/CD templates.",
+  "type": "module",
+  "bin": {
+    "create-microservice": "./src/cli.js"
+  },
+  "main": "src/cli.js",
+  "files": [
+    "src",
+    "templates"
+  ],
+  "scripts": {
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
+    "lint": "eslint .",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "microservice",
+    "generator",
+    "scaffold",
+    "aws",
+    "cli"
+  ],
+  "author": "Haresh Vidja",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^9.2.11",
+    "minimist": "^1.2.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "eslint": "^9.9.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.3.3"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
