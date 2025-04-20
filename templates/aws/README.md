@@ -1,0 +1,1 @@
+Place AWS-specific overrides here (for example, a custom ECS task definition or Lambda SAM template). Copy this folder to `~/.create-microservice/templates/aws` to have those files copied over after project generation.
