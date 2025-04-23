@@ -790,7 +790,7 @@ function createReadme(context) {
       : "  - None";
 
   const workerScriptLine = context.addons.includes("sqs")
-    ? "- `npm run worker:sqs` — Run the SQS worker.\n"
+    ? "- `npm run worker:sqs` - Run the SQS worker.\n"
     : "";
 
   const addonSections = context.addons
@@ -832,25 +832,25 @@ The service exposes a health endpoint at \`http://localhost:${context.port}/heal
 
 ## Available Scripts
 
-- \`npm run dev\` — Start the service in development mode.
-- \`npm run start\` — Start the service in production mode.
-- \`npm test\` — Run the Jest test suite.
-- \`npm run lint\` — Lint the project using ESLint.
-- \`npm run format\` — Verify Prettier formatting.
-- \`npm run docker:build\` — Build a Docker image.
-- \`npm run docker:run\` — Run the Docker image locally.
-- \`npm run deploy:${context.awsTarget}\` — Run the deployment script for the selected AWS target.
+- \`npm run dev\` - Start the service in development mode.
+- \`npm run start\` - Start the service in production mode.
+- \`npm test\` - Run the Jest test suite.
+- \`npm run lint\` - Lint the project using ESLint.
+- \`npm run format\` - Verify Prettier formatting.
+- \`npm run docker:build\` - Build a Docker image.
+- \`npm run docker:run\` - Run the Docker image locally.
+- \`npm run deploy:${context.awsTarget}\` - Run the deployment script for the selected AWS target.
 ${workerScriptLine}
 ## Project Structure
 
 ```
 .
-├── aws/
-├── scripts/
-├── src/
-│   ├── config/
-│   └── utils/
-└── tests/
+|-- aws/
+|-- scripts/
+|-- src/
+|   |-- config/
+|   `-- utils/
+`-- tests/
 ```
 
 ## Deployment
