@@ -843,15 +843,15 @@ The service exposes a health endpoint at \`http://localhost:${context.port}/heal
 ${workerScriptLine}
 ## Project Structure
 
-```
+\`\`\`
 .
 |-- aws/
 |-- scripts/
 |-- src/
 |   |-- config/
-|   `-- utils/
-`-- tests/
-```
+|   '-- utils/
+'-- tests/
+\`\`\`
 
 ## Deployment
 
