@@ -4,7 +4,7 @@ import fs from "fs/promises";
 import { describe, expect, test, beforeAll, afterAll } from "@jest/globals";
 import { generateProject } from "../src/generator.js";
 
-const tempRoot = await fs.mkdtemp(path.join(os.tmpdir(), "create-microservice-"));
+const tempRoot = await fs.mkdtemp(path.join(os.tmpdir(), "microservice-generator-"));
 
 async function readJson(filePath) {
   const content = await fs.readFile(filePath, "utf8");

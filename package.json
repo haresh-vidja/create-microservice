@@ -1,10 +1,10 @@
 {
-  "name": "create-microservice",
+  "name": "microservice-generator",
   "version": "1.0.0",
   "description": "CLI tool that scaffolds a production-ready Node.js microservice with AWS, Docker, and CI/CD templates.",
   "type": "module",
   "bin": {
-    "create-microservice": "./src/cli.js"
+    "microservice-generator": "./src/cli.js"
   },
   "main": "src/cli.js",
   "files": [

@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 import chalk from "chalk";
-import { fileURLToPath } from "url";
 import path from "path";
 import { createRequire } from "module";
 import inquirer from "inquirer";
@@ -20,10 +19,10 @@ const pkg = require("../package.json");
 
 function printHelp() {
   console.log(`
-${chalk.bold("create-microservice")} v${pkg.version}
+${chalk.bold("microservice-generator")} v${pkg.version}
 
 Usage:
-  create-microservice [options]
+  microservice-generator [options]
 
 Options:
   --name <value>         Service name (kebab-case recommended)

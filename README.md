@@ -1,17 +1,17 @@
-# create-microservice
+# microservice-generator
 
-`create-microservice` scaffolds a production-ready Node.js microservice with Docker, AWS deployment scripts, CI/CD pipelines, testing harness, and optional add-ons. The CLI is opinionated but configurable, helping teams spin up consistent services in seconds.
+`microservice-generator` scaffolds a production-ready Node.js microservice with Docker, AWS deployment scripts, CI/CD pipelines, testing harness, and optional add-ons. The CLI is opinionated but configurable, helping teams spin up consistent services in seconds.
 
 ## Quick start
 
 ```bash
-npx create-microservice
+npx microservice-generator
 ```
 
 Answer the interactive prompts or pass options up front:
 
 ```bash
-npx create-microservice \
+npx microservice-generator \
   --name orders-service \
   --framework express \
   --aws ecs \
@@ -22,14 +22,14 @@ npx create-microservice \
 
 ## Features
 
-- Interactive CLI with defaults driven by `~/.microservicegenrc.json`.
+- Interactive CLI with defaults driven by `~/.microservicegeneratorrc.json`.
 - Express or Fastify service skeleton with health check, logging, and graceful shutdown.
 - Dockerfile, docker-compose, and environment templates for local development.
 - Deployment scripts plus AWS samples for ECS, Lambda, and EC2.
 - CI/CD pipelines for GitHub Actions and GitLab CI.
 - Optional add-ons for PostgreSQL, MongoDB, Redis, and SQS.
 - Prewired Jest tests, ESLint, Prettier, and Husky pre-commit hook.
-- Support for custom user templates under `~/.create-microservice/templates/<framework>`.
+- Support for custom user templates under `~/.microservice-generator/templates/<framework>`.
 
 ## CLI options
 
@@ -41,14 +41,14 @@ npx create-microservice \
 | `--cicd`         | `github` or `gitlab`.                                        |
 | `--addons`       | Comma separated add-ons: `postgres`, `mongo`, `redis`, `sqs`. |
 | `--target`       | Output directory (defaults to current working directory).    |
-| `--config`       | Path to config file (defaults to `~/.microservicegenrc.json`). |
+| `--config`       | Path to config file (defaults to `~/.microservicegeneratorrc.json`). |
 | `--yes`          | Skip confirmation prompt.                                    |
 | `--version`      | Print CLI version.                                           |
 | `--help`         | Display usage details.                                       |
 
 ## Defaults file
 
-Define preferred answers in `~/.microservicegenrc.json`:
+Define preferred answers in `~/.microservicegeneratorrc.json`:
 
 ```json
 {
@@ -63,7 +63,7 @@ Define preferred answers in `~/.microservicegenrc.json`:
 Override the generated files by providing a template directory:
 
 ```
-~/.create-microservice/
+~/.microservice-generator/
 └── templates/
     ├── express/
     │   └── src/

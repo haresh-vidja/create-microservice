@@ -3,7 +3,7 @@ import os from "os";
 import path from "path";
 import { FRAMEWORK_CHOICES, AWS_TARGET_CHOICES, CICD_CHOICES } from "./questions.js";
 
-const DEFAULT_CONFIG_FILENAME = ".microservicegenrc.json";
+const DEFAULT_CONFIG_FILENAME = ".microservicegeneratorrc.json";
 
 const FALLBACK_DEFAULTS = {
   defaultFramework: FRAMEWORK_CHOICES[0].value,
