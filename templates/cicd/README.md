@@ -1,1 +1,1 @@
-Place CI/CD pipeline overrides here. Copy this directory to `~/.microservice-generator/templates/cicd` (or inside a framework folder) to have the custom workflow artifacts merged into the generated project.
+Place CI/CD pipeline overrides here. Copy this directory to `~/.microsvc-template/templates/cicd` (or inside a framework folder) to have the custom workflow artifacts merged into the generated project.

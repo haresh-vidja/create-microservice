@@ -1,1 +1,1 @@
-Example override files for the Fastify framework. Copy this folder to `~/.microservice-generator/templates/fastify` and customize as needed. The CLI will merge these files into the generated scaffold after running.
+Example override files for the Fastify framework. Copy this folder to `~/.microsvc-template/templates/fastify` and customize as needed. The CLI will merge these files into the generated scaffold after running.

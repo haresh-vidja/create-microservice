@@ -19,10 +19,10 @@ const pkg = require("../package.json");
 
 function printHelp() {
   console.log(`
-${chalk.bold("microservice-generator")} v${pkg.version}
+${chalk.bold("microsvc-template")} v${pkg.version}
 
 Usage:
-  microservice-generator [options]
+  microsvc-template [options]
 
 Options:
   --name <value>         Service name (kebab-case recommended)

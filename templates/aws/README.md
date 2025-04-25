@@ -1,1 +1,1 @@
-Place AWS-specific overrides here (for example, a custom ECS task definition or Lambda SAM template). Copy this folder to `~/.microservice-generator/templates/aws` to have those files copied over after project generation.
+Place AWS-specific overrides here (for example, a custom ECS task definition or Lambda SAM template). Copy this folder to `~/.microsvc-template/templates/aws` to have those files copied over after project generation.
